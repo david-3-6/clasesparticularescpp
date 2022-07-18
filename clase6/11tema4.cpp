@@ -17,7 +17,7 @@ int contar (const Vector& v, int cant){
     int maxrep=1;
     for(int i=0; i<cant;i++){
         int rep=1, aux=i;
-        while(v[aux+1]==v[i]){
+        while((aux+1)<cant && v[aux+1]==v[i]){
             rep++;
             aux++;
         }
